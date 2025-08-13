@@ -10,24 +10,22 @@ public class Main {
     bootcampJava.getConteudos().add(curso2);
     bootcampJava.getConteudos().add(mentoria);
 
-    Dev devCaio = new Dev();
-    devCaio.setNome("Caio");
-    devCaio.inscreverBootcamp(bootcampJava);
-    System.out.println("> Dev " + devCaio.getNome());
-    System.out.println("Conteúdos Inscritos: " + devCaio.getConteudosInscritos());
-    devCaio.progredir();
-    System.out.println("Conteúdos Concluídos" + devCaio.getConteudosConcluidos());
-    System.out.println("XP Total: " + devCaio.calcularTotalXp());
+    Dev devCaio = new Dev("Caio");
+      devCaio.inscreverBootcamp(bootcampJava);
+      System.out.println("> Dev " + devCaio.getNome());
+      System.out.println("Conteúdos Inscritos: " + devCaio.getConteudosInscritos());
+      devCaio.progredir();
+      System.out.println("Conteúdos Concluídos" + devCaio.getConteudosConcluidos());
+      System.out.println("XP Total: " + devCaio.calcularTotalXp());
 
     System.out.println("=======================================");
 
-    Dev devBia = new Dev();
-    devBia.setNome("Bia");
-    devBia.inscreverBootcamp(bootcampJava);
-    System.out.println("> Dev " + devBia.getNome());
-    System.out.println("-> Conteúdos Inscritos: " + devBia.getConteudosInscritos());
-    devBia.progredir();
-    System.out.println("-> Conteúdos Concluídos" + devBia.getConteudosConcluidos());
-    System.out.println("XP Total: " + devBia.calcularTotalXp());
+    Dev devBia = new Dev("Bia");
+      devBia.inscreverBootcamp(bootcampJava);
+      System.out.println("> Dev " + devBia.getNome());
+      System.out.println("-> Conteúdos Inscritos: " + devBia.getConteudosInscritos());
+      devBia.progredir();
+      System.out.println("-> Conteúdos Concluídos" + devBia.getConteudosConcluidos());
+      System.out.println("XP Total: " + devBia.calcularTotalXp());
   }
 }
