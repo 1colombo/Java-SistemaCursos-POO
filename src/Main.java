@@ -18,8 +18,8 @@ public class Main {
     System.out.println("> Dev " + devCaio.getNome());
     System.out.println("Conteúdos Inscritos: " + devCaio.getConteudosInscritos());
     devCaio.progredir();
-    System.out.println(devCaio.getConteudosConcluidos());
-    devCaio.calcularTotalXp();
+    System.out.println("Conteúdos Concluídos" + devCaio.getConteudosConcluidos());
+    System.out.println("XP Total: " + devCaio.calcularTotalXp());
 
     System.out.println("=======================================");
 
@@ -27,10 +27,9 @@ public class Main {
     devBia.setNome("Bia");
     devBia.inscreverBootcamp(bootcampJava);
     System.out.println("> Dev " + devBia.getNome());
-    System.out.println(devBia.getConteudosInscritos());
+    System.out.println("-> Conteúdos Inscritos: " + devBia.getConteudosInscritos());
     devBia.progredir();
-    System.out.println(devBia.getConteudosConcluidos());
-    devBia.calcularTotalXp();
-
+    System.out.println("-> Conteúdos Concluídos" + devBia.getConteudosConcluidos());
+    System.out.println("XP Total: " + devBia.calcularTotalXp());
   }
 }
