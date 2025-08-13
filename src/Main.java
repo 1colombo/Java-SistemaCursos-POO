@@ -5,9 +5,7 @@ public class Main {
     Conteudo curso2 = new Curso("AWS", "Escalando a  nuvem", 4);
     Conteudo mentoria = new Mentoria("Spring", "Aprenda backend de uma vez.");
 
-    Bootcamp bootcampJava = new Bootcamp();
-    bootcampJava.setNome("Java Master");
-    bootcampJava.setDescricao("Domine a Linguagem Java");
+    Bootcamp bootcampJava = new Bootcamp("Java Master", "Domine a Linguagem Java");
     bootcampJava.getConteudos().add(curso1);
     bootcampJava.getConteudos().add(curso2);
     bootcampJava.getConteudos().add(mentoria);
