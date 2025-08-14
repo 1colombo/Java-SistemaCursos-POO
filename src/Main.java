@@ -23,8 +23,8 @@ public class Main {
 
   public static void infoDev(Dev dev){
     System.out.println("-----------" + dev.getNome() + "-----------");
-    System.out.println("-> Conteúdos Inscritos: " + dev.getConteudosInscritos());
-    System.out.println("-> Conteúdos Concluídos" + dev.getConteudosConcluidos());
+    System.out.println("-> Conteúdos Inscritos:\n" + dev.getConteudosInscritos().toString());
+    System.out.println("-> Conteúdos Concluídos:\n" + dev.getConteudosConcluidos().toString());
     System.out.println("XP Total: " + dev.calcularTotalXp());
   }
 }

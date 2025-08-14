@@ -1,3 +1,4 @@
+import java.text.MessageFormat;
 
 public class Mentoria extends Conteudo{
 
@@ -12,9 +13,6 @@ public class Mentoria extends Conteudo{
 
     @Override
     public String toString() {
-        return "Mentoria{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' + 
-                '}';
+        return MessageFormat.format("\nMentoria: {0}\nDescrição: {1}\n=============", getTitulo(), getDescricao());
     }
 }

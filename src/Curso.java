@@ -23,10 +23,11 @@ public class Curso extends Conteudo{
 
     @Override
     public String toString() {
-        return "Curso{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
-                '}';
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("\nCurso:");
+        stringBuilder.append(getTitulo());
+        stringBuilder.append("\nDescrição:");
+        stringBuilder.append(getDescricao());
+        return stringBuilder.toString();
     }
 }
